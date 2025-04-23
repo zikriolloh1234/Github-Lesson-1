@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.svg{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.navbar{
+    display: grid;
+
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(1, 100%);
+
+    place-items: center;
+    // place-self: center;
+    
+    gap: 20px;
+   
+    width: 100%;
+    background-color: rgba(0, 17, 26, 1);
+    height: 15vh;
+    color: white;
+
+}
+.input{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    background-color:rgba(13, 29, 37, 1);
+    place-content: center;
+    place-self: center;
+    place-items: center;
+}
+.input input{
+    background-color: transparent;
+    width: 300px;
+    font-size: 20px;
+    height: 20px;
+    border: none;
+    margin-left: 100px;
+    color: white;
+}
+.img{
+    margin-left: 100px;
+    padding-left: 50px;
+}
+.svg_search{
+    position: relative;
+    left: 70px;
+    top: 5px;
+    color: white;
+}
+.novo button{
+    background-color: rgba(117, 3, 16, 1);
+    font-size: 20px;
+    border-radius: 5px;
+    width: 190px;
+    border: none;
+    height: 50px;
+    color: white;
+}
+.vxod{
+    background-color: white;
+    border-radius: 3px;
+}
+.sabores{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.959);
+    // height: 80vh;
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+
+.sab1{
+    width: 67%;
+    background-color: rgba(9, 30, 38, 1);
+    height: 35vh;
+   text-align: center;
+   place-content: center;
+   margin: auto;
+   color: white;
+   margin-top: 50px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sab1 h1{
+    margin-left: 45%;
+}
+.sab1 p{
+    margin-left: 45%;
+}
+.sabores img{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 52%;
+    bottom: 200px;
+}
+.refei{
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.salada img{
+    width: 200px;
+    height: 200px;
+}
+.salada1 img{
+    width: 200px;
+    height: 200px;
+}
+.salada2 img{
+    width: 200px;
+    height: 200px;
+}
+.salada3 img{
+    width: 200px;
+    height: 200px;
+}
+.salada4 img{
+    width: 200px;
+    height: 200px;
+}
+.salada5 img{
+    width: 200px;
+    height: 200px;
+}
+.salada6 img{
+    width: 200px;
+    height: 200px;
+}
+.salada7 img{
+    width: 200px;
+    height: 200px;
+}
+.salada8 img{
+    width: 200px;
+    height: 200px;
+}
+@mixin salad (){
+    width: 25%;
+    margin-top: 30px;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.048);
+}
+$p_color:rgb(230, 3, 250);
+$p_font-size:30px;
+.salada img{
+    position: absolute;
+    top: 600px;
+    right: 1030px;
+}
+.salada1 img{
+    position: absolute;
+    top: 600px;
+    right: 160px;
+}
+.salada2 img{
+    position: absolute;
+    top: 600px;
+    right: 600px;
+}
+.salada3 img{
+    position: absolute;
+    top: 1000px;
+    right: 600px;
+}
+.salada4 img{
+    position: absolute;
+    top: 600px;
+    right: 600px;
+}
+.salada5 img{
+    position: absolute;
+    top: 600px;
+    right: 600px;
+}
+
+
+.salada{
+    @include salad;
+}
+.salada1{
+    @include salad;
+}
+.salada2{
+    @include salad;
+}
+
+.salada7 h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada h3{
+    margin-top: 10px;
+}
+.salada1 h3{
+    margin-top: 10px;
+}
+.salada p{
+    margin-top: 20px;
+}
+.salada1 p{
+    margin-top: 20px;
+}
+.salada2 p{
+    margin-top: 20px;
+}
+.salada{
+    padding-top: 250px;
+}
+.salada1{
+    padding-top: 250px;
+}
+.salada2{
+    padding-top: 250px;
+}
+.number{
+    color: $p_color;
+    font-size: $p_font-size;
+}
+.pen{
+    background-color: white;
+    margin-left: 130px;
+    position: absolute;
+    bottom: 30px;
+}
+.folhas{
+    width: 70%;
+    font-size: 14px;
+    margin-left: 55px;
+}
+.salad{
+    display: flex;
+    justify-content: space-evenly;
+}

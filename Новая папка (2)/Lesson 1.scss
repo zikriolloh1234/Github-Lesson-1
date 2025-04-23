@@ -1,0 +1,32 @@
+$main-color:rgb(255,0,0);
+$bg-color:rgb(255,100,100);
+h1{
+   color: $main-color;
+   font-size: 2em;
+   background-color: $bg-color;
+}
+
+@mixin button_style(){
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@mixin bg-color($a, $size){
+    background-color: $a;
+    font-size: $size;
+    border-radius: $size;
+}
+
+.btn1{
+    @include bg-color(rgb(190, 138, 138),40px);
+    @include button_style;
+}
+
+.btn2{
+    @include bg-color(blue,10px);
+    @include button_style;
+    background-color: red;
+}
